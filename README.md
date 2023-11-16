@@ -11,3 +11,7 @@ Home page
 Menu item page 
 
 ![Menu item page srceenshot](https://github.com/inilay/UpTrader_test/blob/main/Screenshots/Sc2.png)
+
+Nesting
+
+![Nesting items srceenshot](https://github.com/inilay/UpTrader_test/blob/main/Screenshots/Sc3.png)
