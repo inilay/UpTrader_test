@@ -1,0 +1,23 @@
+{% load draw_menu_level %}
+
+
+<ul class="nav nav-list tree">
+    {% for menu_node in current_level_nodes %}
+        <li>
+            <span>
+                <a href = "{% url 'node' menu_node.slug %}">
+                    {{ menu_node.node_name }}
+                </a>
+            </span>
+            <label class="tree-toggle nav-header">
+                <span class="menu-collapsible-icon glyphicon glyphicon-chevron-down"></span>
+            </label>
+            {% if menu_node.node_name in grouped_levels %}
+                {% draw_menu_level grouped_levels menu_node.node_name %}
+            {% endif %}
+        </li>
+    
+    {% endfor %}
+</ul>
+
+
